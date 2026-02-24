@@ -1,0 +1,1352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>FLUB JUGGLERS - Ankeny Iowa's #1 Restaurant!!! - Est. 2003</title>
+  <meta name="description" content="Flub Jugglers Restaurant Ankeny Iowa Wings Riblets Best Food Fun">
+  <meta name="keywords" content="flub jugglers ankeny iowa restaurant wings riblets fun family dining best">
+  <style>
+    /* ===== FLUB JUGGLERS WEBSITE 2003 ===== */
+    body {
+      background-color: #000000;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="%23000"/><circle cx="10" cy="20" r="1" fill="white" opacity="0.8"/><circle cx="50" cy="5" r="1.5" fill="white" opacity="0.6"/><circle cx="90" cy="40" r="1" fill="white" opacity="0.9"/><circle cx="130" cy="15" r="1" fill="white" opacity="0.7"/><circle cx="170" cy="35" r="1.5" fill="white" opacity="0.5"/><circle cx="30" cy="60" r="1" fill="white" opacity="0.8"/><circle cx="75" cy="80" r="1" fill="white" opacity="0.6"/><circle cx="120" cy="65" r="1.5" fill="white" opacity="0.9"/><circle cx="160" cy="90" r="1" fill="white" opacity="0.7"/><circle cx="195" cy="55" r="1" fill="white" opacity="0.8"/><circle cx="15" cy="110" r="1.5" fill="white" opacity="0.5"/><circle cx="55" cy="130" r="1" fill="white" opacity="0.9"/><circle cx="100" cy="115" r="1" fill="white" opacity="0.6"/><circle cx="145" cy="140" r="1.5" fill="white" opacity="0.8"/><circle cx="185" cy="120" r="1" fill="white" opacity="0.7"/><circle cx="25" cy="165" r="1" fill="white" opacity="0.9"/><circle cx="70" cy="180" r="1.5" fill="white" opacity="0.5"/><circle cx="115" cy="170" r="1" fill="white" opacity="0.8"/><circle cx="155" cy="185" r="1" fill="white" opacity="0.6"/><circle cx="190" cy="160" r="1" fill="white" opacity="0.9"/></svg>');
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    a { color: #ff6600; text-decoration: underline; }
+    a:hover { color: #ffff00; text-decoration: blink; }
+    a:visited { color: #ff00ff; }
+
+    /* TWINKLING STARS */
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.1; }
+    }
+    .star { animation: twinkle 2s infinite; }
+
+    /* FIRE ANIMATION */
+    @keyframes flicker {
+      0%   { color: #ff0000; text-shadow: 0 0 5px #ff6600; }
+      25%  { color: #ff6600; text-shadow: 0 0 10px #ffff00; }
+      50%  { color: #ffff00; text-shadow: 0 0 15px #ff0000; }
+      75%  { color: #ff6600; text-shadow: 0 0 8px #ff0000; }
+      100% { color: #ff0000; text-shadow: 0 0 5px #ff6600; }
+    }
+    .fire-text {
+      animation: flicker 0.5s infinite;
+    }
+
+    @keyframes rainbow {
+      0%   { color: #ff0000; }
+      14%  { color: #ff7700; }
+      28%  { color: #ffff00; }
+      42%  { color: #00ff00; }
+      57%  { color: #0000ff; }
+      71%  { color: #8b00ff; }
+      85%  { color: #ff00ff; }
+      100% { color: #ff0000; }
+    }
+    .rainbow-text {
+      animation: rainbow 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .blink {
+      animation: blink 0.7s step-end infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600; }
+      50%       { text-shadow: 0 0 20px #ffff00, 0 0 40px #ff6600, 0 0 60px #ff0000; }
+    }
+    .glow { animation: pulse-glow 1.5s infinite; }
+
+    /* BOUNCE LOGO */
+    @keyframes bounce-logo {
+      0%, 100% { transform: translateY(0px) rotate(-2deg); }
+      50%       { transform: translateY(-8px) rotate(2deg); }
+    }
+    .logo-bounce { animation: bounce-logo 1.8s ease-in-out infinite; }
+
+    /* SPINNING */
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    .spin { animation: spin 3s linear infinite; display: inline-block; }
+
+    /* TABLES */
+    .main-table {
+      width: 780px;
+      margin: 0 auto;
+      border: 0;
+    }
+
+    .header-cell {
+      background: linear-gradient(180deg, #660000, #cc0000, #660000);
+      text-align: center;
+      padding: 5px;
+      border: 3px solid #ff6600;
+    }
+
+    .nav-cell {
+      background-color: #330000;
+      border: 2px solid #ff6600;
+      padding: 5px;
+      vertical-align: top;
+      width: 150px;
+    }
+
+    .content-cell {
+      background-color: #111111;
+      border: 2px solid #ff6600;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    .footer-cell {
+      background: linear-gradient(180deg, #330000, #660000);
+      text-align: center;
+      border: 3px solid #ff6600;
+      padding: 8px;
+    }
+
+    /* NAV BUTTONS */
+    .nav-btn {
+      display: block;
+      background: linear-gradient(180deg, #cc6600, #ff6600, #cc6600);
+      border: 2px outset #ffaa00;
+      color: #000000;
+      text-decoration: none;
+      font-family: "Comic Sans MS", cursive;
+      font-weight: bold;
+      font-size: 13px;
+      padding: 6px 4px;
+      margin: 4px 2px;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .nav-btn:hover {
+      background: linear-gradient(180deg, #ffaa00, #ffff00, #ffaa00);
+      color: #cc0000;
+      border: 2px inset #ffaa00;
+      text-decoration: none;
+    }
+    .nav-btn:visited { color: #000000; }
+
+    /* FLAME DIVIDER */
+    .flame-divider {
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin: 5px 0;
+      color: #ff6600;
+    }
+
+    /* SECTION HEADERS */
+    .section-header {
+      background: linear-gradient(90deg, #cc0000, #ff6600, #cc0000);
+      color: #ffff00;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      padding: 5px;
+      border: 2px solid #ff0000;
+      text-transform: uppercase;
+      text-shadow: 2px 2px #000000;
+    }
+
+    /* CONTENT BOXES */
+    .content-box {
+      background-color: #1a0000;
+      border: 2px solid #cc6600;
+      padding: 8px;
+      margin: 8px 0;
+    }
+
+    /* MENU TABLE */
+    .menu-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .menu-table td {
+      border: 1px solid #ff6600;
+      padding: 5px 8px;
+      vertical-align: top;
+      font-size: 13px;
+    }
+    .menu-table tr:nth-child(odd) td { background-color: #220000; }
+    .menu-table tr:nth-child(even) td { background-color: #110000; }
+    .menu-table .item-name {
+      color: #ff9900;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .menu-table .price {
+      color: #00ff00;
+      font-weight: bold;
+      white-space: nowrap;
+      width: 70px;
+      text-align: right;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      background: #220033;
+      border: 1px dashed #ff00ff;
+      padding: 6px;
+      margin: 5px 0;
+      font-size: 12px;
+      font-style: italic;
+      color: #ffccff;
+    }
+
+    /* HIT COUNTER */
+    .counter {
+      font-family: "Courier New", monospace;
+      font-size: 24px;
+      background: #000000;
+      color: #00ff00;
+      border: 3px inset #006600;
+      padding: 4px 10px;
+      letter-spacing: 4px;
+    }
+
+    /* NEW BADGE */
+    .new-badge {
+      background: #ff0000;
+      color: #ffff00;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 1px 4px;
+      border: 1px solid #ffff00;
+      animation: blink 0.5s step-end infinite;
+    }
+
+    /* UNDER CONSTRUCTION */
+    .under-construction {
+      background: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 10px,
+        #ffff00 10px,
+        #ffff00 20px
+      );
+      color: #000000;
+      font-weight: bold;
+      text-align: center;
+      padding: 6px;
+      font-size: 13px;
+    }
+
+    /* WEBRING */
+    .webring {
+      background: #000033;
+      border: 2px solid #0000ff;
+      padding: 5px;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    /* FUN FACTS TICKER */
+    .ticker-box {
+      background: #000033;
+      border: 2px solid #0066ff;
+      padding: 4px;
+      overflow: hidden;
+    }
+
+    /* GUESTBOOK */
+    .guestbook-entry {
+      border-bottom: 1px dashed #ff6600;
+      padding: 5px 0;
+      font-size: 12px;
+    }
+
+    marquee { display: block; }
+
+    /* POPUP OVERLAY */
+    #popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(135deg, #cc0000, #660000);
+      border: 4px ridge #ff6600;
+      padding: 20px;
+      text-align: center;
+      z-index: 9999;
+      width: 320px;
+      box-shadow: 0 0 30px #ff6600;
+    }
+    #popup-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 9998;
+    }
+
+    /* PAGE SECTIONS */
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+
+    img.pixel-img { image-rendering: pixelated; }
+
+    /* Fake "visitor counter" stars */
+    .visitor-star { color: #ffff00; font-size: 10px; }
+
+    .italic-small { font-style: italic; font-size: 11px; color: #aaaaaa; }
+
+    /* SPECIALS BADGE */
+    @keyframes spin-badge {
+      0%   { transform: rotate(-5deg) scale(1.0); }
+      50%  { transform: rotate(5deg) scale(1.05); }
+      100% { transform: rotate(-5deg) scale(1.0); }
+    }
+    .specials-badge {
+      display: inline-block;
+      background: #ffff00;
+      color: #cc0000;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 90px; height: 90px;
+      line-height: 1;
+      padding: 14px 5px;
+      text-align: center;
+      border: 3px solid #ff0000;
+      animation: spin-badge 1s ease-in-out infinite;
+      float: right;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body onload="showPopup()">
+
+<!-- POPUP -->
+<div id="popup-overlay" onclick="closePopup()"></div>
+<div id="popup">
+  <div style="font-size:22px; font-weight:bold; color:#ffff00; animation: flicker 0.5s infinite;" class="fire-text">🔥 WAIT!!!! 🔥</div>
+  <div style="margin:10px 0; font-size:14px; color:#ffffff;">
+    You are entering the OFFICIAL website of<br>
+    <span style="font-size:20px; color:#ff9900; font-weight:bold;">FLUB JUGGLERS</span><br>
+    <span style="font-size:11px; color:#ffccaa;">Ankeny Iowa's Premier Dining Destination!!</span>
+  </div>
+  <div style="font-size:12px; color:#ffff99; margin:8px 0; font-style:italic;">
+    ⚠️ WARNING: This website contains extreme deliciousness,<br>spectacular women, and mediocre service with a smile.
+  </div>
+  <div style="font-size:12px; color:#ffcccc; margin:8px 0;">
+    Best viewed in Internet Explorer 6.0<br>
+    at 800x600 resolution
+  </div>
+  <button onclick="closePopup()" style="background:linear-gradient(180deg,#ff6600,#cc3300); color:#ffff00; font-family:'Comic Sans MS',cursive; font-weight:bold; font-size:15px; border:3px outset #ffaa00; padding:8px 20px; cursor:pointer; margin-top:8px;">
+    ENTER THE FLUB ZONE !!!!!
+  </button>
+  <div style="font-size:10px; color:#888; margin-top:8px;">
+    <a href="#" onclick="closePopup()" style="color:#888; font-size:10px;">No thanks, I hate fun</a>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT TABLE -->
+<table class="main-table" cellpadding="0" cellspacing="0">
+
+  <!-- HEADER ROW -->
+  <tr>
+    <td colspan="2" class="header-cell">
+      <div class="logo-bounce" style="display:inline-block;">
+        <div style="font-size:48px; font-weight:bold; color:#ff9900; text-shadow: 3px 3px #000, 0 0 20px #ff0000, 0 0 40px #ff6600; letter-spacing:3px; font-family:'Comic Sans MS',cursive;">
+          🍗 FLUB JUGGLERS 🍗
+        </div>
+      </div>
+      <div class="rainbow-text" style="font-size:16px; font-weight:bold; margin-top:-4px; font-style:italic;">
+        "Where Every Night is an Adventure in Mediocrity!"
+      </div>
+      <div style="margin-top:5px;">
+        <marquee behavior="scroll" direction="left" scrollamount="4" style="font-size:13px; color:#ffff99; background:#330000; padding:3px;">
+          🍗 NOW OPEN LATE ON FRIDAYS &amp; SATURDAYS!!  •  🏆 "BEST PLACE TO EAT" - Ankeny Pennysaver 2003, 2004, 2005  •  🔥 TRY THE NEW SCORCHED RIBLETS BASKET!!  •  📅 TRIVIA NIGHT EVERY TUESDAY - PRIZES!!!  •  🎉 HAPPY HOUR 4PM-6PM WEEKDAYS - $1.25 OFF ALL APPETIZERS!!!  •  ⭐ KIDS EAT FREE SUNDAYS (with purchase of 2 adult entrees)  •  🎵 DJ BRYCE EVERY FRIDAY &amp; SATURDAY NIGHT!!!  •
+        </marquee>
+      </div>
+    </td>
+  </tr>
+
+  <!-- NAV + CONTENT ROW -->
+  <tr>
+
+    <!-- LEFT NAV -->
+    <td class="nav-cell">
+      <div style="text-align:center; margin-bottom:6px;">
+        <div style="font-size:11px; color:#ff9900; font-weight:bold; border-bottom:1px solid #ff6600; padding-bottom:3px;">✦ NAVIGATE ✦</div>
+      </div>
+
+      <a href="#" class="nav-btn" onclick="showPage('home')">🏠 HOME</a>
+      <a href="#" class="nav-btn" onclick="showPage('menu')">🍗 THE MENU</a>
+      <a href="#" class="nav-btn" onclick="showPage('about')">❓ ABOUT US</a>
+      <a href="#" class="nav-btn" onclick="showPage('staff')">🤹 OUR STAFF</a>
+      <a href="#" class="nav-btn" onclick="showPage('specials')">💥 SPECIALS!</a>
+      <a href="#" class="nav-btn" onclick="showPage('location')">📍 FIND US</a>
+      <a href="#" class="nav-btn" onclick="showPage('guestbook')">📖 GUESTBOOK</a>
+      <a href="#" class="nav-btn" onclick="showPage('gallery')">📷 PHOTOS</a>
+
+      <div class="flame-divider" style="margin:8px 0;">🔥🔥🔥</div>
+
+      <!-- HOURS BOX -->
+      <div style="background:#220000; border:1px solid #cc3300; padding:5px; font-size:11px; margin:4px 0;">
+        <div style="color:#ff9900; font-weight:bold; text-align:center; border-bottom:1px solid #cc3300; margin-bottom:3px;">⏰ HOURS</div>
+        <div>Mon-Thu: 11am-10pm</div>
+        <div>Fri-Sat: 11am-MIDNIGHT</div>
+        <div>Sun: Noon-9pm</div>
+        <div style="margin-top:4px; color:#ff6600;">☎️ (515) 555-FLUB</div>
+      </div>
+
+      <!-- VISITOR COUNTER -->
+      <div style="text-align:center; margin:8px 0; font-size:11px;">
+        <div style="color:#ffff99; margin-bottom:3px;">✨ Visitors Since<br>April 14th 2003: ✨</div>
+        <div class="counter" id="counter">051,337</div>
+        <div style="font-size:9px; color:#888888; margin-top:2px; font-style:italic;">(you are visitor #51,337!)</div>
+      </div>
+
+      <!-- AWARDS -->
+      <div style="background:#001100; border:1px solid #00cc00; padding:5px; font-size:10px; margin-top:6px; text-align:center;">
+        <div style="color:#00ff00; font-weight:bold; margin-bottom:3px;">🏅 AWARDS 🏅</div>
+        <div style="color:#ccffcc; line-height:1.6;">
+          🥇 Best Wings<br>
+          <span style="font-size:9px;color:#888">-Ankeny Pennysaver '04</span><br>
+          🥇 Most Confusing Name<br>
+          <span style="font-size:9px;color:#888">-Des Moines Register '05</span><br>
+          🥈 Runner-Up Cleanest Restrooms<br>
+          <span style="font-size:9px;color:#888">-Polk Co. Health Dept '04</span>
+        </div>
+      </div>
+
+      <!-- WEBRING -->
+      <div class="webring" style="margin-top:8px; font-size:10px;">
+        <div style="color:#aaaaff; font-weight:bold; margin-bottom:3px;">Iowa Restaurant WebRing</div>
+        <a href="#" style="font-size:10px;">◄◄ Prev</a> |
+        <a href="#" style="font-size:10px;">Home</a> |
+        <a href="#" style="font-size:10px;">Next ►►</a>
+      </div>
+
+      <!-- 88x31 buttons -->
+      <div style="margin-top:8px; text-align:center;">
+        <div style="background:#000080; border:1px outset #0000ff; padding:2px 5px; font-size:9px; color:#ffffff; display:inline-block; margin:2px;">IE 6.0<br>Compatible!</div>
+        <div style="background:#cc6600; border:1px outset #ff9900; padding:2px 5px; font-size:9px; color:#ffffff; display:inline-block; margin:2px;">Best<br>Viewed<br>800x600</div>
+        <div style="background:#006600; border:1px outset #00ff00; padding:2px 5px; font-size:9px; color:#ffffff; display:inline-block; margin:2px;">100%<br>Iowa<br>Proud!</div>
+      </div>
+
+    </td>
+
+    <!-- MAIN CONTENT -->
+    <td class="content-cell">
+
+      <!-- ===== HOME PAGE ===== -->
+      <div id="page-home" class="page-section active">
+
+        <div style="text-align:center; margin-bottom:10px;">
+          <div class="fire-text" style="font-size:26px; font-weight:bold;">🔥 WELCOME TO FLUB JUGGLERS!!! 🔥</div>
+          <div style="font-size:13px; color:#ffcc99; font-style:italic; margin-top:4px;">Ankeny, Iowa's MOST TALKED ABOUT Restaurant &amp; Entertainment Experience!!</div>
+        </div>
+
+        <!-- ANIMATED DIVIDER -->
+        <marquee behavior="alternate" scrollamount="3" style="font-size:16px; color:#ff6600;">🔥🌟🍗🌟🔥🌟🍗🌟🔥🌟🍗🌟🔥🌟🍗🌟🔥</marquee>
+
+        <div class="content-box">
+          <div class="section-header">📣 WHAT IS A FLUB JUGGLER??</div>
+          <div style="padding:8px; font-size:13px; line-height:1.7; color:#ffddcc;">
+            <p>Now THAT is the question everybody asks and Randy LOVES answering it.</p>
+            <p>Back in 2002, Randy drove past one of those so-called "breastaurants" down in Des Moines — you know the type. Skinny little girls in tight shirts looking like they'd rather be anywhere else. Randy sat in the parking lot for a minute, eating his gas station sandwich, and he had what he calls <strong style="color:#ff9900;">A Vision.</strong></p>
+            <p>He thought: <em>"What if it was like that... but the women actually had something to 'em?"</em></p>
+            <p>Randy calls it <strong style="color:#ff9900;">"The Flub Philosophy."</strong> Our ladies are not waifs. They are not twigs. They have — in Randy's words, which Cheryl has asked us to put in quotes — <strong style="color:#ff9900;">"substance, personality, and presence."</strong> A little extra flub. And Randy believes, deeply and sincerely, that this is a COMPETITIVE ADVANTAGE.</p>
+            <p>The name <strong style="color:#ff9900;">Flub Jugglers</strong> is a celebration of that. Our women juggle your entire dining experience — your drinks, your food, the ketchup you asked for — AND they look great doing it, in a real, human, Ankeny-Iowa kind of way.</p>
+            <p>Cheryl says the name "could have used a focus group." Randy says the name "is perfect." They have agreed to disagree on this for going on two years now.</p>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">🌟 THIS WEEK'S HOT STUFF 🌟</div>
+          <div class="specials-badge">HOT<br>DEAL!<br>💥</div>
+          <ul style="color:#ffddcc; font-size:13px; line-height:2.0; list-style:none; padding:5px 0 5px 10px;">
+            <li>🍗 <span class="new-badge">NEW</span> &nbsp;<strong style="color:#ff9900;">ATOMIC FLUB WINGS</strong> — so hot we had to sign a waiver to put them on the menu</li>
+            <li>🍺 <strong style="color:#ff9900;">DOMESTIC DRAFT $1.99</strong> during all Iowa Hawkeyes games</li>
+            <li>🎂 <strong style="color:#ff9900;">FREE BIRTHDAY DESSERT</strong> — must show ID, our staff will sing (they are NOT professionals)</li>
+            <li>🎵 <span class="new-badge">TONIGHT</span> &nbsp;<strong style="color:#ff9900;">DJ BRYCE</strong> — Fridays &amp; Saturdays starting at 9pm!! (Donna's nephew. He is okay.)</li>
+            <li>🧅 <span class="new-badge">NEW</span> &nbsp;<strong style="color:#ff9900;">BLOOMIN' FLUB ONION</strong> — our lawyers asked us to say it is "inspired by" not "copied from" any other restaurant's onion</li>
+          </ul>
+        </div>
+
+        <!-- MEET OUR SERVERS -->
+        <div class="content-box">
+          <div class="section-header">👩‍🦱 MEET YOUR FLUB JUGGLERS!! 👩‍🦱</div>
+          <div style="text-align:center; font-size:12px; color:#ffcc99; font-style:italic; padding:5px 0 8px 0;">The ladies who make the magic happen!! (And occasionally drop things!! 🤹)</div>
+          <table width="100%" cellpadding="4" cellspacing="0">
+            <tr>
+              <td style="text-align:center; vertical-align:bottom; width:25%;">
+                <!-- DONNA SVG -->
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="130" height="177">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <ellipse cx="77" cy="75" rx="60" ry="56" fill="#6B2A08"/>
+                  <ellipse cx="32" cy="72" rx="28" ry="26" fill="#5a2206"/>
+                  <ellipse cx="122" cy="70" rx="28" ry="24" fill="#5a2206"/>
+                  <ellipse cx="77" cy="38" rx="36" ry="20" fill="#7B3410"/>
+                  <path d="M32 55 Q25 38 35 28" stroke="#8B4410" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                  <path d="M122 52 Q130 36 120 26" stroke="#8B4410" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <path d="M77 30 Q82 18 77 12" stroke="#8B4410" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/>
+                  <text x="77" y="195" text-anchor="middle" fill="#ffff00" font-size="8" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text>
+                  <rect x="63" y="150" width="28" height="22" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="22" cy="180" rx="16" ry="10" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="133" cy="180" rx="16" ry="10" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M20 178 L10 205" stroke="#D4956A" stroke-width="14" stroke-linecap="round" fill="none"/>
+                  <rect x="2" y="200" width="22" height="28" fill="#ffffd0" stroke="#888" stroke-width="1" rx="1"/>
+                  <rect x="2" y="200" width="22" height="6" fill="#ff9900" rx="1"/>
+                  <line x1="5" y1="211" x2="21" y2="211" stroke="#aaa" stroke-width="1"/>
+                  <line x1="5" y1="216" x2="21" y2="216" stroke="#aaa" stroke-width="1"/>
+                  <line x1="5" y1="221" x2="21" y2="221" stroke="#aaa" stroke-width="1"/>
+                  <line x1="12" y1="198" x2="6" y2="210" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M135 178 L142 200" stroke="#D4956A" stroke-width="14" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="141" cy="203" rx="8" ry="6" fill="#D4956A" stroke="#1a0800" stroke-width="1"/>
+                  <rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/>
+                  <rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/>
+                  <text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text>
+                  <text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">DONNA</text>
+                  <ellipse cx="77" cy="112" rx="40" ry="42" fill="#D4956A" stroke="#1a0800" stroke-width="2"/>
+                  <path d="M37 105 Q35 80 46 66 Q60 50 77 48" fill="#7B3410" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M117 105 Q119 80 108 66 Q94 50 77 48" fill="#7B3410" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="118" y1="96" x2="118" y2="112" stroke="#f5f5dc" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="118" cy="95" r="3.5" fill="#ff5500"/>
+                  <circle cx="118" cy="95" r="2" fill="#ff8800"/>
+                  <path d="M118 91 Q122 86 118 81 Q114 76 118 71" stroke="#cccccc" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+                  <ellipse cx="62" cy="103" rx="14" ry="8" fill="#3355bb" opacity="0.45"/>
+                  <ellipse cx="93" cy="103" rx="14" ry="8" fill="#3355bb" opacity="0.45"/>
+                  <ellipse cx="62" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="62" cy="109" rx="7" ry="6" fill="#5a3010"/>
+                  <ellipse cx="62" cy="109" rx="3.5" ry="3.5" fill="#1a0800"/>
+                  <ellipse cx="60" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <path d="M49 105 Q62 98 75 105 L75 109 Q62 101 49 109 Z" fill="#D4956A"/>
+                  <path d="M49 105 Q62 98 75 105" stroke="#1a0800" stroke-width="2.5" fill="none"/>
+                  <line x1="51" y1="104" x2="49" y2="100" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="56" y1="101" x2="55" y2="97" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="62" y1="99" x2="62" y2="95" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="68" y1="101" x2="69" y2="97" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="73" y1="104" x2="75" y2="100" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="93" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="93" cy="109" rx="7" ry="6" fill="#5a3010"/>
+                  <ellipse cx="93" cy="109" rx="3.5" ry="3.5" fill="#1a0800"/>
+                  <ellipse cx="91" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <path d="M80 105 Q93 98 106 105 L106 109 Q93 101 80 109 Z" fill="#D4956A"/>
+                  <path d="M80 105 Q93 98 106 105" stroke="#1a0800" stroke-width="2.5" fill="none"/>
+                  <line x1="82" y1="104" x2="80" y2="100" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="87" y1="101" x2="86" y2="97" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="93" y1="99" x2="93" y2="95" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="99" y1="101" x2="100" y2="97" stroke="#1a0800" stroke-width="1.5"/>
+                  <line x1="104" y1="104" x2="106" y2="100" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M51 96 Q62 92 72 94" stroke="#5a3010" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <path d="M83 94 Q93 92 104 96" stroke="#5a3010" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <path d="M75 118 Q73 127 68 131 Q77 134 86 131 Q81 127 79 118" stroke="#B07050" stroke-width="1.5" fill="none"/>
+                  <ellipse cx="70" cy="131" rx="2.5" ry="1.5" fill="#B07050" opacity="0.6"/>
+                  <ellipse cx="84" cy="131" rx="2.5" ry="1.5" fill="#B07050" opacity="0.6"/>
+                  <path d="M63 142 Q77 140 91 142" stroke="#CC2222" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                  <path d="M63 142 Q77 146 91 142" stroke="#CC2222" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                  <ellipse cx="48" cy="122" rx="10" ry="6" fill="#e07060" opacity="0.2"/>
+                  <ellipse cx="106" cy="122" rx="10" ry="6" fill="#e07060" opacity="0.2"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:13px; margin-top:3px;">DONNA</div>
+                <div style="color:#ffccaa; font-size:10px; font-style:italic;">14-yr veteran</div>
+              </td>
+              <td style="text-align:center; vertical-align:bottom; width:25%;">
+                <!-- TINA SVG -->
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="130" height="177">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/>
+                  <text x="77" y="198" text-anchor="middle" fill="#ffff00" font-size="7.5" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text>
+                  <path d="M22 180 Q40 190 75 188" stroke="#C88860" stroke-width="14" stroke-linecap="round" fill="none"/>
+                  <path d="M133 178 Q110 192 78 188" stroke="#C88860" stroke-width="14" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="76" cy="188" rx="10" ry="7" fill="#C88860" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M28 183 Q35 178 42 183 Q49 188 56 183 Q63 178 70 183" stroke="#2244aa" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M30 187 Q37 182 44 187 Q51 192 58 187 Q65 182 72 187" stroke="#2244aa" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <rect x="63" y="150" width="29" height="22" fill="#C88860" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M68 158 Q72 153 77 155 Q82 153 87 158 Q82 162 77 165 Q72 162 68 158 Z" stroke="#2244aa" stroke-width="1.5" fill="none"/>
+                  <path d="M73 158 Q77 156 81 158" stroke="#2244aa" stroke-width="1" fill="none"/>
+                  <rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/>
+                  <rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/>
+                  <text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text>
+                  <text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">TINA</text>
+                  <ellipse cx="77" cy="112" rx="40" ry="42" fill="#C88860" stroke="#1a0800" stroke-width="2"/>
+                  <path d="M40 100 Q40 75 55 62 Q65 52 77 50 Q89 52 99 62 Q114 75 114 100" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1.5"/>
+                  <polygon points="55,68 58,42 62,66" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1"/>
+                  <polygon points="64,60 68,34 72,58" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1"/>
+                  <polygon points="74,55 77,28 80,55" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1"/>
+                  <polygon points="84,58 88,34 92,60" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1"/>
+                  <polygon points="93,65 97,42 100,68" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1"/>
+                  <ellipse cx="40" cy="108" rx="6" ry="18" fill="#b87848" stroke="#1a0800" stroke-width="1"/>
+                  <path d="M52 99 Q62 97 70 99" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <path d="M84 90 Q93 85 103 90" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <path d="M90 94 Q93 91 97 93" stroke="#B07050" stroke-width="1" fill="none"/>
+                  <ellipse cx="61" cy="108" rx="12" ry="7" fill="white" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="61" cy="109" rx="6" ry="5" fill="#2a5a2a"/>
+                  <ellipse cx="61" cy="109" rx="3" ry="3" fill="#0a1a0a"/>
+                  <ellipse cx="59" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <path d="M49 105 Q61 101 73 105 L73 108 Q61 103 49 108 Z" fill="#C88860"/>
+                  <path d="M49 105 Q61 101 73 105" stroke="#1a0800" stroke-width="2" fill="none"/>
+                  <ellipse cx="93" cy="106" rx="13" ry="10" fill="white" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="93" cy="107" rx="7" ry="7" fill="#2a5a2a"/>
+                  <ellipse cx="93" cy="107" rx="3.5" ry="3.5" fill="#0a1a0a"/>
+                  <ellipse cx="91" cy="106" rx="1.5" ry="1.5" fill="white"/>
+                  <path d="M80 103 Q93 100 106 103" stroke="#1a0800" stroke-width="2" fill="none"/>
+                  <path d="M80 114 Q93 117 106 114" stroke="#1a0800" stroke-width="1.5" fill="none"/>
+                  <path d="M75 118 Q73 127 69 131 Q78 134 86 131 Q82 127 80 118" stroke="#A07050" stroke-width="1.5" fill="none"/>
+                  <ellipse cx="71" cy="131" rx="2.5" ry="1.5" fill="#A07050" opacity="0.6"/>
+                  <ellipse cx="83" cy="131" rx="2.5" ry="1.5" fill="#A07050" opacity="0.6"/>
+                  <path d="M63 141 Q77 139 91 143" stroke="#CC4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <path d="M91 143 Q93 141 91 140" stroke="#A07050" stroke-width="1.5" fill="none"/>
+                  <ellipse cx="82" cy="148" rx="8" ry="6" fill="#ff99cc" stroke="#cc6688" stroke-width="1" opacity="0.9"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:13px; margin-top:3px;">TINA</div>
+                <div style="color:#ffccaa; font-size:10px; font-style:italic;">"Don't even."</div>
+              </td>
+              <td style="text-align:center; vertical-align:bottom; width:25%;">
+                <!-- BRANDI SVG -->
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="130" height="177">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/>
+                  <text x="77" y="198" text-anchor="middle" fill="#ffff00" font-size="7.5" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text>
+                  <ellipse cx="20" cy="174" rx="17" ry="5" fill="#cc8800" stroke="#1a0800" stroke-width="1.5" transform="rotate(15 20 174)"/>
+                  <rect x="13" y="163" width="8" height="10" fill="#ffaa00" stroke="#1a0800" stroke-width="1" rx="1" transform="rotate(15 17 168)"/>
+                  <ellipse cx="8" cy="172" rx="3" ry="2" fill="#ffaa00" opacity="0.7"/>
+                  <path d="M22 175 L18 200" stroke="#E8C090" stroke-width="13" stroke-linecap="round" fill="none"/>
+                  <path d="M133 178 L138 195" stroke="#E8C090" stroke-width="13" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="138" cy="198" rx="8" ry="6" fill="#E8C090" stroke="#1a0800" stroke-width="1"/>
+                  <circle cx="36" cy="122" r="16" fill="none" stroke="#ffcc00" stroke-width="4"/>
+                  <circle cx="119" cy="122" r="16" fill="none" stroke="#ffcc00" stroke-width="4"/>
+                  <circle cx="37" cy="107" r="3" fill="#ffcc00"/>
+                  <circle cx="118" cy="107" r="3" fill="#ffcc00"/>
+                  <rect x="63" y="150" width="29" height="22" fill="#E8C090" stroke="#1a0800" stroke-width="1.5"/>
+                  <rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/>
+                  <rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/>
+                  <text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text>
+                  <text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">BRANDI</text>
+                  <ellipse cx="77" cy="112" rx="38" ry="40" fill="#E8C090" stroke="#1a0800" stroke-width="2"/>
+                  <ellipse cx="77" cy="72" rx="18" ry="12" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="77" cy="72" rx="10" ry="6" fill="#ff66aa" stroke="#1a0800" stroke-width="1"/>
+                  <path d="M77 72 Q90 50 85 30 Q80 15 90 5 Q100 18 88 32 Q82 48 92 68 Q85 74 77 72" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M77 72 Q64 50 68 30 Q73 15 63 5 Q53 18 66 32 Q72 48 62 68 Q69 74 77 72" fill="#FFD700" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M40 100 Q38 80 50 68 Q60 58 77 56" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M114 100 Q116 80 104 68 Q94 58 77 56" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="61" cy="106" rx="18" ry="10" fill="#111111" opacity="0.85"/>
+                  <ellipse cx="93" cy="106" rx="18" ry="10" fill="#111111" opacity="0.85"/>
+                  <ellipse cx="61" cy="108" rx="13" ry="8" fill="white" stroke="#0a0808" stroke-width="1.5"/>
+                  <ellipse cx="61" cy="109" rx="7" ry="6" fill="#3a1a6a"/>
+                  <ellipse cx="61" cy="109" rx="3.5" ry="3.5" fill="#0a0818"/>
+                  <ellipse cx="59" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <line x1="48" y1="104" x2="44" y2="98" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="53" y1="101" x2="50" y2="95" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="58" y1="100" x2="56" y2="93" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="63" y1="100" x2="62" y2="93" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="68" y1="101" x2="68" y2="95" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="73" y1="104" x2="75" y2="98" stroke="#0a0808" stroke-width="2"/>
+                  <ellipse cx="93" cy="108" rx="13" ry="8" fill="white" stroke="#0a0808" stroke-width="1.5"/>
+                  <ellipse cx="93" cy="109" rx="7" ry="6" fill="#3a1a6a"/>
+                  <ellipse cx="93" cy="109" rx="3.5" ry="3.5" fill="#0a0818"/>
+                  <ellipse cx="91" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <line x1="80" y1="104" x2="78" y2="98" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="85" y1="101" x2="83" y2="95" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="90" y1="100" x2="89" y2="93" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="95" y1="100" x2="95" y2="93" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="100" y1="101" x2="101" y2="95" stroke="#0a0808" stroke-width="2"/>
+                  <line x1="105" y1="104" x2="107" y2="98" stroke="#0a0808" stroke-width="2"/>
+                  <path d="M47 97 Q61 90 74 95" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M80 95 Q93 90 107 97" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M76 117 Q74 124 71 127 Q77 130 83 127 Q80 124 78 117" stroke="#C09060" stroke-width="1.5" fill="none"/>
+                  <path d="M60 138 Q77 133 94 138 Q90 148 77 150 Q64 148 60 138 Z" fill="#ff4466" stroke="#cc2244" stroke-width="2"/>
+                  <path d="M63 140 Q77 137 91 140 L90 144 Q77 141 64 144 Z" fill="white"/>
+                  <ellipse cx="82" cy="142" rx="3" ry="2" fill="#ff4466" opacity="0.7"/>
+                  <ellipse cx="48" cy="122" rx="12" ry="8" fill="#ff9999" opacity="0.35"/>
+                  <ellipse cx="106" cy="122" rx="12" ry="8" fill="#ff9999" opacity="0.35"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:13px; margin-top:3px;">BRANDI</div>
+                <div style="color:#ffccaa; font-size:10px; font-style:italic;">Employee of Month*</div>
+              </td>
+              <td style="text-align:center; vertical-align:bottom; width:25%;">
+                <!-- CRYSTAL SVG -->
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="130" height="177">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/>
+                  <text x="77" y="198" text-anchor="middle" fill="#ffff00" font-size="7.5" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text>
+                  <path d="M22 175 L15 200" stroke="#D4956A" stroke-width="13" stroke-linecap="round" fill="none"/>
+                  <path d="M133 175 L140 195" stroke="#D4956A" stroke-width="13" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="140" cy="198" rx="8" ry="6" fill="#D4956A" stroke="#1a0800" stroke-width="1"/>
+                  <ellipse cx="133" cy="196" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-20 133 196)"/>
+                  <ellipse cx="138" cy="194" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-10 138 194)"/>
+                  <ellipse cx="143" cy="194" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(5 143 194)"/>
+                  <ellipse cx="148" cy="196" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(18 148 196)"/>
+                  <ellipse cx="15" cy="202" rx="8" ry="6" fill="#D4956A" stroke="#1a0800" stroke-width="1"/>
+                  <ellipse cx="8" cy="200" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-18 8 200)"/>
+                  <ellipse cx="12" cy="198" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-8 12 198)"/>
+                  <ellipse cx="17" cy="198" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(5 17 198)"/>
+                  <ellipse cx="22" cy="200" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(16 22 200)"/>
+                  <rect x="63" y="150" width="29" height="22" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/>
+                  <rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/>
+                  <rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/>
+                  <text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text>
+                  <text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">CRYSTAL</text>
+                  <ellipse cx="77" cy="112" rx="40" ry="42" fill="#D4956A" stroke="#1a0800" stroke-width="2"/>
+                  <circle cx="77" cy="90" r="52" fill="#3a1a08" stroke="#1a0800" stroke-width="1.5"/>
+                  <circle cx="35" cy="80" r="16" fill="#4a2008"/>
+                  <circle cx="25" cy="98" r="14" fill="#3a1a08"/>
+                  <circle cx="30" cy="115" r="12" fill="#4a2008"/>
+                  <circle cx="119" cy="80" r="16" fill="#4a2008"/>
+                  <circle cx="129" cy="98" r="14" fill="#3a1a08"/>
+                  <circle cx="125" cy="115" r="12" fill="#4a2008"/>
+                  <circle cx="50" cy="60" r="14" fill="#3a1a08"/>
+                  <circle cx="77" cy="52" r="15" fill="#4a2008"/>
+                  <circle cx="104" cy="60" r="14" fill="#3a1a08"/>
+                  <path d="M38 105 Q36 82 48 68 Q60 55 77 53" fill="#4a2008" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M116 105 Q118 82 106 68 Q94 55 77 53" fill="#4a2008" stroke="#1a0800" stroke-width="1.5"/>
+                  <path d="M46 95 Q40 100 44 108 Q48 116 42 120" stroke="#5a2a10" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M108 92 Q114 98 110 106 Q106 114 112 118" stroke="#5a2a10" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <ellipse cx="62" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="62" cy="109" rx="7" ry="6" fill="#3a2a8a"/>
+                  <ellipse cx="62" cy="109" rx="3.5" ry="3.5" fill="#0a0820"/>
+                  <ellipse cx="60" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <path d="M49 105 Q62 101 75 105" stroke="#1a0800" stroke-width="2" fill="none"/>
+                  <line x1="50" y1="104" x2="46" y2="96" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="55" y1="102" x2="52" y2="93" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="60" y1="101" x2="58" y2="92" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="65" y1="101" x2="64" y2="92" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="70" y1="102" x2="71" y2="93" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="74" y1="104" x2="77" y2="96" stroke="#1a0800" stroke-width="2.5"/>
+                  <path d="M49 114 Q62 119 75 114" stroke="#1a0800" stroke-width="1" fill="none"/>
+                  <ellipse cx="93" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/>
+                  <ellipse cx="93" cy="109" rx="7" ry="6" fill="#3a2a8a"/>
+                  <ellipse cx="93" cy="109" rx="3.5" ry="3.5" fill="#0a0820"/>
+                  <ellipse cx="91" cy="108" rx="1.5" ry="1.5" fill="white"/>
+                  <path d="M80 105 Q93 101 106 105" stroke="#1a0800" stroke-width="2" fill="none"/>
+                  <line x1="81" y1="104" x2="77" y2="96" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="86" y1="102" x2="83" y2="93" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="91" y1="101" x2="89" y2="92" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="96" y1="101" x2="96" y2="92" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="101" y1="102" x2="103" y2="93" stroke="#1a0800" stroke-width="2.5"/>
+                  <line x1="105" y1="104" x2="108" y2="96" stroke="#1a0800" stroke-width="2.5"/>
+                  <path d="M80 114 Q93 119 106 114" stroke="#1a0800" stroke-width="1" fill="none"/>
+                  <path d="M52 97 Q62 92 73 95" stroke="#3a1a08" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M82 95 Q93 92 103 97" stroke="#3a1a08" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M75 117 Q73 126 70 130 Q78 133 85 130 Q82 126 79 117" stroke="#B07050" stroke-width="1.5" fill="none"/>
+                  <path d="M59 140 Q77 134 95 140 Q92 150 77 153 Q62 150 59 140 Z" fill="#cc3322" stroke="#aa2211" stroke-width="2"/>
+                  <path d="M63 141 Q77 138 91 141 L90 147 Q77 144 64 147 Z" fill="white"/>
+                  <rect x="70" y="141" width="7" height="5" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5" rx="0.5"/>
+                  <line x1="77" y1="141" x2="77" y2="147" stroke="#cc3322" stroke-width="1"/>
+                  <ellipse cx="47" cy="124" rx="13" ry="8" fill="#e08060" opacity="0.3"/>
+                  <ellipse cx="107" cy="124" rx="13" ry="8" fill="#e08060" opacity="0.3"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:13px; margin-top:3px;">CRYSTAL</div>
+                <div style="color:#ffccaa; font-size:10px; font-style:italic;">The Heart of FJ</div>
+              </td>
+            </tr>
+          </table>
+          <div style="text-align:center; font-size:10px; color:#888; font-style:italic; margin-top:5px; padding-top:5px; border-top:1px dashed #660000;">*"Employee of the Month" is currently under dispute between Brandi and Crystal. Cheryl is staying out of it.</div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="content-box">
+          <div class="section-header">💬 WHAT PEOPLE ARE SAYING!!!</div>
+          <div class="testimonial">
+            ⭐⭐⭐⭐⭐ "I came in for wings and left with a new outlook on life. Also I won trivia night. Flub Jugglers RULES!!"
+            <div style="color:#ff9900; margin-top:3px;">— DaveFromAnkeny1967, FoodPages.com</div>
+          </div>
+          <div class="testimonial">
+            ⭐⭐⭐⭐ "Our waitress dropped my ranch dressing but then she caught it before it hit the table. Was that the juggling? Either way I gave her a good tip."
+            <div style="color:#ff9900; margin-top:3px;">— SandraK, Ankeny Coupons Forum</div>
+          </div>
+          <div class="testimonial">
+            ⭐⭐⭐⭐⭐ "My son asked me what a 'flub juggler' was and I said I honestly don't know but the riblets are fantastic."
+            <div style="color:#ff9900; margin-top:3px;">— GregJ, Des Moines Area Parent</div>
+          </div>
+          <div class="testimonial">
+            ⭐⭐⭐ "They got my order wrong twice but both times they got it wrong it was actually something I liked better. That has to count for something."
+            <div style="color:#ff9900; margin-top:3px;">— Anonymous, Customer Comment Card (physical)</div>
+          </div>
+          <div style="text-align:right; margin-top:5px;">
+            <a href="#" onclick="showPage('guestbook')" style="font-size:11px; color:#ff6600;">Sign our guestbook to leave YOUR review!! &gt;&gt;</a>
+          </div>
+        </div>
+
+        <div class="under-construction">
+          🚧 COMING SOON: ONLINE ORDERING!! (WE ARE WORKING ON IT) 🚧
+        </div>
+
+      </div>
+
+      <!-- ===== MENU PAGE ===== -->
+      <div id="page-menu" class="page-section">
+        <div class="fire-text" style="font-size:24px; font-weight:bold; text-align:center;">🍗 THE FLUB JUGGLERS MENU 🍗</div>
+        <div style="text-align:center; font-size:11px; color:#aaaaaa; font-style:italic; margin-bottom:8px;">Prices subject to change. We will try to update this page. No guarantees.</div>
+
+        <!-- APPETIZERS -->
+        <div class="section-header">🧅 STARTERS &amp; STUFF</div>
+        <table class="menu-table">
+          <tr>
+            <td><div class="item-name">The Flub Sampler Platter</div><div>A little bit of everything. Some of it is good. Wings, riblet bites, cheese stix, onion petals, and two sauces (we choose the sauces)</div></td>
+            <td class="price">$12.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Bloomin' Flub Onion <span class="new-badge">NEW</span></div><div>A big ol' onion. Fried. With dipping sauce. Our lawyers say it is "entirely original."</div></td>
+            <td class="price">$7.49</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Cheese Stix (6 or 12)</div><div>Mozzarella. Fried. Marinara on the side. You know what these are.</div></td>
+            <td class="price">$5.99 / $9.49</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Spinach Dip in a Bread Bowl</div><div>Randy's wife Cheryl's recipe. She has asked us to keep it confidential so we can't say what's in it.</div></td>
+            <td class="price">$8.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Loaded Potato Skins (8 pc)</div><div>Cheddar, bacon bits, sour cream, and green onions. Classic. Timeless. Reliable. Unlike some of our staff.</div></td>
+            <td class="price">$8.49</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- WINGS -->
+        <div class="section-header">🔥 THE WINGS SITUATION</div>
+        <div style="font-size:12px; color:#ff9900; padding:5px; font-style:italic;">All wings come with celery sticks and your choice of ranch or blue cheese. Wings are traditional or boneless. Ask your server about our sauce wall.</div>
+        <table class="menu-table">
+          <tr>
+            <td><div class="item-name">Regular Wings (10 pc)</div><div>Sauces: Mild, Medium, Hot, BBQ, Garlic Parm, Honey Mustard</div></td>
+            <td class="price">$10.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Regular Wings (20 pc)</div><div>The "dinner" size. Enough for two people or one hungry person who we won't judge.</div></td>
+            <td class="price">$18.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">ATOMIC FLUB WINGS (10 pc) <span class="new-badge">NEW</span></div><div style="color:#ff4444;">⚠️ EXTREMELY HOT. You must sign a card. We keep them. Sauce so hot it has a name: "The Incident."</div></td>
+            <td class="price">$13.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Wing Bucket (50 pc)</div><div>For parties, sports events, or deeply personal situations. Comes in a real bucket.</div></td>
+            <td class="price">$44.99</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- ENTREES -->
+        <div class="section-header">🍽️ REAL FOOD (ENTREES)</div>
+        <table class="menu-table">
+          <tr>
+            <td><div class="item-name">The Juggler's Burger</div><div>1/2 lb beef patty, cheddar, lettuce, tomato, onion, Flub Sauce™. Served with fries or coleslaw. Flub Sauce™ is a trade secret.</div></td>
+            <td class="price">$11.49</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Riblets Basket</div><div>A full basket of slow-cooked riblets with your choice of BBQ sauce. Randy's personal favorite. He told us to put that on here.</div></td>
+            <td class="price">$13.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Chicken Tenders (5 pc)</div><div>Hand-battered. Actually hand-battered, not just saying that. We watched them do it.</div></td>
+            <td class="price">$10.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Grilled Chicken Sandwich</div><div>For people who are "watching their health" while eating at Flub Jugglers. We respect it. Comes with a side salad.</div></td>
+            <td class="price">$9.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">The "Randy Special"</div><div>Full rack of ribs + wings (10pc) + loaded potato skins + two drinks. Randy eats this every Tuesday. He has a booth reserved.</div></td>
+            <td class="price">$34.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Kids Menu <span style="font-size:11px;color:#aaa;">(12 &amp; under)</span></div><div>Corn dogs, chicken tenders (3pc), grilled cheese. Each comes with fries, juice box, and a coupon for a free scoop of ice cream at Ankeny Dairy Creme (Randy worked out a deal). Kevin might also come talk to your kids if he's there that night. You cannot stop him.</div></td>
+            <td class="price">$5.99</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- DRINKS -->
+        <div class="section-header">🍺 DRINKS &amp; STUFF</div>
+        <table class="menu-table">
+          <tr>
+            <td><div class="item-name">Domestic Draft</div><div>Bud, Bud Light, Miller Lite, Coors Light. We know. But people like them.</div></td>
+            <td class="price">$3.49</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Premium / Import Bottles</div><div>Ask your server. Selection changes. We're trying to class it up.</div></td>
+            <td class="price">$4.99+</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Margarita (Frozen or Rocks)</div><div>Made by whoever's tending bar. Quality varies. We are honest about this.</div></td>
+            <td class="price">$6.99</td>
+          </tr>
+          <tr>
+            <td><div class="item-name">Pop / Soft Drinks</div><div>Free refills. Pepsi products because Coke wouldn't return Randy's calls.</div></td>
+            <td class="price">$2.49</td>
+          </tr>
+        </table>
+
+        <div style="margin-top:10px; font-size:11px; color:#888888; font-style:italic; text-align:center;">
+          *Menu items subject to availability. Some items may be seasonal. We reserve the right to be out of things. 18% gratuity added to parties of 8 or more. Please tip your Flub Juggler generously — they're doing their best.
+        </div>
+      </div>
+
+      <!-- ===== ABOUT PAGE ===== -->
+      <div id="page-about" class="page-section">
+        <div class="fire-text" style="font-size:24px; font-weight:bold; text-align:center;">❓ THE STORY OF FLUB JUGGLERS ❓</div>
+        <div class="content-box" style="margin-top:10px;">
+          <div class="section-header">🏠 HOW IT ALL STARTED</div>
+          <div style="padding:8px; font-size:13px; line-height:1.8; color:#ffddcc;">
+            <p>It was <strong style="color:#ff9900;">February 14th, 2002</strong> — Valentine's Day — when <strong style="color:#ff9900;">Randall Eugene Flubmeyer</strong> walked out of his job at the Ankeny Jiffy Lube for the last time and told his wife Cheryl, "I'm gonna open a restaurant."</p>
+            <p>Cheryl said, "Randy, you can barely boil water." Randy said, "That's what STAFF is for, Cheryl."</p>
+            <p>The concept came to Randy a few weeks later. He'd driven past one of those "breastaurant" places down in Des Moines — the kind with the skimpy uniforms and the laminated menus. He sat in the parking lot eating a gas station sandwich, squinting at the place, and he had what he describes as <strong style="color:#ff9900;">A Vision.</strong></p>
+            <p><em>"Those girls looked cold and miserable,"</em> Randy told the Ankeny Pennysaver in a 2003 profile. <em>"I thought — what if you did that concept but the women were real? Like, actual women? From Iowa? With something to 'em?"</em></p>
+            <p>Randy calls it <strong style="color:#ff9900;">"The Flub Philosophy."</strong> The name came naturally from there. He combined with a <strong style="color:#ff9900;">$30,000 small business loan</strong> from Iowa State Bank &amp; Trust and what Cheryl calls "a truly alarming amount of confidence," Flub Jugglers was born.</p>
+            <p>Cheryl told him the name needed work. Randy said it was perfect. <strong style="color:#ff9900;">We opened March 8th, 2003.</strong> Forty people came on opening day. The name worked.</p>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">📜 OUR PHILOSOPHY</div>
+          <div style="padding:8px; font-size:13px; line-height:1.8; color:#ffddcc;">
+            <p>At Flub Jugglers, we believe in <strong style="color:#ff9900;">three things:</strong></p>
+            <p><strong style="color:#ff6600;">1. Good food, mostly.</strong> We try hard. Our chicken is fresh. Our fries are made from real potatoes. Randy personally approves every sauce.</p>
+            <p><strong style="color:#ff6600;">2. Fun atmosphere, always.</strong> You don't come to Flub Jugglers to eat in silence. You come because you want energy, some background noise, cold drinks, and women who will give you a hard time in a friendly way.</p>
+            <p><strong style="color:#ff6600;">3. Honest service, despite everything.</strong> Our staff are not perfect. They will sometimes get your order wrong. They will occasionally drop something. They will not always bring your ranch when you ask. But they will be UPFRONT about it and they will try AGAIN and that is more than you can say for a lot of places.</p>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">❓ FREQUENTLY ASKED QUESTIONS</div>
+          <div style="padding:8px; font-size:13px; color:#ffddcc; line-height:1.8;">
+            <p><strong style="color:#ff9900;">Q: What exactly does "Flub Jugglers" mean?</strong><br>
+            A: Randy has a whole speech about this. The short version: Randy believes the restaurant industry is oversaturated with places that hire the same type of woman — and he wanted to do something different. Our ladies have what Randy calls "substance." He considers this the whole concept. Cheryl considers it "a liability from a naming standpoint." We've been having this conversation for two years.</p>
+            <p><strong style="color:#ff9900;">Q: Do people actually juggle at Flub Jugglers?</strong><br>
+            A: No. However, Randy's cousin Kevin does sometimes show up on weekends and attempt to juggle things in the parking lot. We have asked him to stop. He has not stopped. This is a family situation and we are navigating it.</p>
+            <p><strong style="color:#ff9900;">Q: Is there a dress code?</strong><br>
+            A: We ask guests to wear shoes. Other than that, we're pretty Ankeny about it.</p>
+            <p><strong style="color:#ff9900;">Q: Is Flub Jugglers family friendly?</strong><br>
+            A: We have a kids menu and we have a full bar. You figure it out.</p>
+            <p><strong style="color:#ff9900;">Q: Can I host a private event at Flub Jugglers?</strong><br>
+            A: Yes! Birthday parties, work events, family reunions, whatever. Call (515) 555-FLUB and ask for Randy or Donna (our events coordinator). Not Kevin. Kevin is not staff. Kevin is Randy's cousin and his presence at your event is not something we can promise or prevent.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== STAFF PAGE ===== -->
+      <div id="page-staff" class="page-section">
+        <div class="fire-text" style="font-size:24px; font-weight:bold; text-align:center;">🍗 MEET THE FLUB JUGGLER CREW! 🍗</div>
+        <div style="text-align:center; font-size:12px; color:#aaaaaa; font-style:italic; margin-bottom:10px;">The team that makes the magic (and sometimes the mess) happen!!</div>
+
+        <!-- SERVER PORTRAITS ROW -->
+        <div class="content-box" style="margin-bottom:10px;">
+          <div class="section-header">🤹 THE FLUB JUGGLER SERVER SQUAD 🤹</div>
+          <div style="text-align:center; font-size:11px; color:#ffcc99; padding:4px 0 8px 0; font-style:italic;">The faces of Flub Jugglers!! (Officially: "Our talent represents the full spectrum of Ankeny.")</div>
+          <table width="100%" cellpadding="4" cellspacing="4">
+            <tr>
+              <td style="text-align:center; vertical-align:top; width:25%;">
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="140" height="190">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <ellipse cx="77" cy="75" rx="60" ry="56" fill="#6B2A08"/><ellipse cx="32" cy="72" rx="28" ry="26" fill="#5a2206"/><ellipse cx="122" cy="70" rx="28" ry="24" fill="#5a2206"/><ellipse cx="77" cy="38" rx="36" ry="20" fill="#7B3410"/><path d="M32 55 Q25 38 35 28" stroke="#8B4410" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M122 52 Q130 36 120 26" stroke="#8B4410" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M77 30 Q82 18 77 12" stroke="#8B4410" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/><text x="77" y="195" text-anchor="middle" fill="#ffff00" font-size="8" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text><rect x="63" y="150" width="28" height="22" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="22" cy="180" rx="16" ry="10" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="133" cy="180" rx="16" ry="10" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/><path d="M20 178 L10 205" stroke="#D4956A" stroke-width="14" stroke-linecap="round" fill="none"/><rect x="2" y="200" width="22" height="28" fill="#ffffd0" stroke="#888" stroke-width="1" rx="1"/><rect x="2" y="200" width="22" height="6" fill="#ff9900" rx="1"/><line x1="5" y1="211" x2="21" y2="211" stroke="#aaa" stroke-width="1"/><line x1="5" y1="216" x2="21" y2="216" stroke="#aaa" stroke-width="1"/><line x1="5" y1="221" x2="21" y2="221" stroke="#aaa" stroke-width="1"/><path d="M135 178 L142 200" stroke="#D4956A" stroke-width="14" stroke-linecap="round" fill="none"/><rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/><rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/><text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text><text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">DONNA</text><ellipse cx="77" cy="112" rx="40" ry="42" fill="#D4956A" stroke="#1a0800" stroke-width="2"/><path d="M37 105 Q35 80 46 66 Q60 50 77 48" fill="#7B3410" stroke="#1a0800" stroke-width="1.5"/><path d="M117 105 Q119 80 108 66 Q94 50 77 48" fill="#7B3410" stroke="#1a0800" stroke-width="1.5"/><line x1="118" y1="96" x2="118" y2="112" stroke="#f5f5dc" stroke-width="4" stroke-linecap="round"/><circle cx="118" cy="95" r="3.5" fill="#ff5500"/><path d="M118 91 Q122 86 118 81 Q114 76 118 71" stroke="#cccccc" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/><ellipse cx="62" cy="103" rx="14" ry="8" fill="#3355bb" opacity="0.45"/><ellipse cx="93" cy="103" rx="14" ry="8" fill="#3355bb" opacity="0.45"/><ellipse cx="62" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="62" cy="109" rx="7" ry="6" fill="#5a3010"/><ellipse cx="62" cy="109" rx="3.5" ry="3.5" fill="#1a0800"/><ellipse cx="60" cy="108" rx="1.5" ry="1.5" fill="white"/><path d="M49 105 Q62 98 75 105 L75 109 Q62 101 49 109 Z" fill="#D4956A"/><path d="M49 105 Q62 98 75 105" stroke="#1a0800" stroke-width="2.5" fill="none"/><ellipse cx="93" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="93" cy="109" rx="7" ry="6" fill="#5a3010"/><ellipse cx="93" cy="109" rx="3.5" ry="3.5" fill="#1a0800"/><ellipse cx="91" cy="108" rx="1.5" ry="1.5" fill="white"/><path d="M80 105 Q93 98 106 105 L106 109 Q93 101 80 109 Z" fill="#D4956A"/><path d="M80 105 Q93 98 106 105" stroke="#1a0800" stroke-width="2.5" fill="none"/><path d="M51 96 Q62 92 72 94" stroke="#5a3010" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M83 94 Q93 92 104 96" stroke="#5a3010" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M75 118 Q73 127 68 131 Q77 134 86 131 Q81 127 79 118" stroke="#B07050" stroke-width="1.5" fill="none"/><path d="M63 142 Q77 140 91 142" stroke="#CC2222" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:14px;">DONNA</div>
+                <div style="color:#ffddcc; font-size:12px; font-style:italic; line-height:1.5; margin-top:3px;">Has seen it all. Remembers all of it. Will not be sharing.</div>
+              </td>
+              <td style="text-align:center; vertical-align:top; width:25%;">
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="140" height="190">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/><text x="77" y="198" text-anchor="middle" fill="#ffff00" font-size="7.5" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text><path d="M22 180 Q40 190 75 188" stroke="#C88860" stroke-width="14" stroke-linecap="round" fill="none"/><path d="M133 178 Q110 192 78 188" stroke="#C88860" stroke-width="14" stroke-linecap="round" fill="none"/><ellipse cx="76" cy="188" rx="10" ry="7" fill="#C88860" stroke="#1a0800" stroke-width="1.5"/><path d="M28 183 Q35 178 42 183 Q49 188 56 183 Q63 178 70 183" stroke="#2244aa" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M30 187 Q37 182 44 187 Q51 192 58 187 Q65 182 72 187" stroke="#2244aa" stroke-width="1.5" fill="none" stroke-linecap="round"/><rect x="63" y="150" width="29" height="22" fill="#C88860" stroke="#1a0800" stroke-width="1.5"/><path d="M68 158 Q72 153 77 155 Q82 153 87 158 Q82 162 77 165 Q72 162 68 158 Z" stroke="#2244aa" stroke-width="1.5" fill="none"/><rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/><rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/><text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text><text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">TINA</text><ellipse cx="77" cy="112" rx="40" ry="42" fill="#C88860" stroke="#1a0800" stroke-width="2"/><path d="M40 100 Q40 75 55 62 Q65 52 77 50 Q89 52 99 62 Q114 75 114 100" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1.5"/><polygon points="55,68 58,42 62,66" fill="#1a1a1a"/><polygon points="64,60 68,34 72,58" fill="#1a1a1a"/><polygon points="74,55 77,28 80,55" fill="#1a1a1a"/><polygon points="84,58 88,34 92,60" fill="#1a1a1a"/><polygon points="93,65 97,42 100,68" fill="#1a1a1a"/><ellipse cx="40" cy="108" rx="6" ry="18" fill="#b87848" stroke="#1a0800" stroke-width="1"/><path d="M52 99 Q62 97 70 99" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M84 90 Q93 85 103 90" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="61" cy="108" rx="12" ry="7" fill="white" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="61" cy="109" rx="6" ry="5" fill="#2a5a2a"/><ellipse cx="61" cy="109" rx="3" ry="3" fill="#0a1a0a"/><path d="M49 105 Q61 101 73 105 L73 108 Q61 103 49 108 Z" fill="#C88860"/><path d="M49 105 Q61 101 73 105" stroke="#1a0800" stroke-width="2" fill="none"/><ellipse cx="93" cy="106" rx="13" ry="10" fill="white" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="93" cy="107" rx="7" ry="7" fill="#2a5a2a"/><ellipse cx="93" cy="107" rx="3.5" ry="3.5" fill="#0a1a0a"/><path d="M80 103 Q93 100 106 103" stroke="#1a0800" stroke-width="2" fill="none"/><path d="M75 118 Q73 127 69 131 Q78 134 86 131 Q82 127 80 118" stroke="#A07050" stroke-width="1.5" fill="none"/><path d="M63 141 Q77 139 91 143" stroke="#CC4444" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="82" cy="148" rx="8" ry="6" fill="#ff99cc" stroke="#cc6688" stroke-width="1" opacity="0.9"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:14px;">TINA</div>
+                <div style="color:#ffddcc; font-size:12px; font-style:italic; line-height:1.5; margin-top:3px;">Neck tattoo. Arms always crossed. Always chewing gum. Do not ask about the tattoo.</div>
+              </td>
+              <td style="text-align:center; vertical-align:top; width:25%;">
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="140" height="190">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/><text x="77" y="198" text-anchor="middle" fill="#ffff00" font-size="7.5" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text><ellipse cx="20" cy="174" rx="17" ry="5" fill="#cc8800" stroke="#1a0800" stroke-width="1.5" transform="rotate(15 20 174)"/><ellipse cx="8" cy="172" rx="3" ry="2" fill="#ffaa00" opacity="0.7"/><path d="M22 175 L18 200" stroke="#E8C090" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M133 178 L138 195" stroke="#E8C090" stroke-width="13" stroke-linecap="round" fill="none"/><circle cx="36" cy="122" r="16" fill="none" stroke="#ffcc00" stroke-width="4"/><circle cx="119" cy="122" r="16" fill="none" stroke="#ffcc00" stroke-width="4"/><circle cx="37" cy="107" r="3" fill="#ffcc00"/><circle cx="118" cy="107" r="3" fill="#ffcc00"/><rect x="63" y="150" width="29" height="22" fill="#E8C090" stroke="#1a0800" stroke-width="1.5"/><rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/><rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/><text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text><text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">BRANDI</text><ellipse cx="77" cy="112" rx="38" ry="40" fill="#E8C090" stroke="#1a0800" stroke-width="2"/><ellipse cx="77" cy="72" rx="18" ry="12" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="77" cy="72" rx="10" ry="6" fill="#ff66aa" stroke="#1a0800" stroke-width="1"/><path d="M77 72 Q90 50 85 30 Q80 15 90 5 Q100 18 88 32 Q82 48 92 68 Q85 74 77 72" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/><path d="M77 72 Q64 50 68 30 Q73 15 63 5 Q53 18 66 32 Q72 48 62 68 Q69 74 77 72" fill="#FFD700" stroke="#1a0800" stroke-width="1.5"/><path d="M40 100 Q38 80 50 68 Q60 58 77 56" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/><path d="M114 100 Q116 80 104 68 Q94 58 77 56" fill="#FFEE66" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="61" cy="106" rx="18" ry="10" fill="#111111" opacity="0.85"/><ellipse cx="93" cy="106" rx="18" ry="10" fill="#111111" opacity="0.85"/><ellipse cx="61" cy="108" rx="13" ry="8" fill="white" stroke="#0a0808" stroke-width="1.5"/><ellipse cx="61" cy="109" rx="7" ry="6" fill="#3a1a6a"/><ellipse cx="61" cy="109" rx="3.5" ry="3.5" fill="#0a0818"/><line x1="48" y1="104" x2="44" y2="98" stroke="#0a0808" stroke-width="2"/><line x1="53" y1="101" x2="50" y2="95" stroke="#0a0808" stroke-width="2"/><line x1="58" y1="100" x2="56" y2="93" stroke="#0a0808" stroke-width="2"/><line x1="63" y1="100" x2="62" y2="93" stroke="#0a0808" stroke-width="2"/><line x1="68" y1="101" x2="68" y2="95" stroke="#0a0808" stroke-width="2"/><line x1="73" y1="104" x2="75" y2="98" stroke="#0a0808" stroke-width="2"/><ellipse cx="93" cy="108" rx="13" ry="8" fill="white" stroke="#0a0808" stroke-width="1.5"/><ellipse cx="93" cy="109" rx="7" ry="6" fill="#3a1a6a"/><ellipse cx="93" cy="109" rx="3.5" ry="3.5" fill="#0a0818"/><line x1="80" y1="104" x2="78" y2="98" stroke="#0a0808" stroke-width="2"/><line x1="85" y1="101" x2="83" y2="95" stroke="#0a0808" stroke-width="2"/><line x1="90" y1="100" x2="89" y2="93" stroke="#0a0808" stroke-width="2"/><line x1="95" y1="100" x2="95" y2="93" stroke="#0a0808" stroke-width="2"/><line x1="100" y1="101" x2="101" y2="95" stroke="#0a0808" stroke-width="2"/><line x1="105" y1="104" x2="107" y2="98" stroke="#0a0808" stroke-width="2"/><path d="M47 97 Q61 90 74 95" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M80 95 Q93 90 107 97" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M60 138 Q77 133 94 138 Q90 148 77 150 Q64 148 60 138 Z" fill="#ff4466" stroke="#cc2244" stroke-width="2"/><path d="M63 140 Q77 137 91 140 L90 144 Q77 141 64 144 Z" fill="white"/><ellipse cx="82" cy="142" rx="3" ry="2" fill="#ff4466" opacity="0.7"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:14px;">BRANDI</div>
+                <div style="color:#ffddcc; font-size:12px; font-style:italic; line-height:1.5; margin-top:3px;">High ponytail, huge earrings, tray perpetually at 15 degrees. Somehow nothing spills. Mostly.</div>
+              </td>
+              <td style="text-align:center; vertical-align:top; width:25%;">
+                <svg viewBox="0 0 155 210" xmlns="http://www.w3.org/2000/svg" width="140" height="190">
+                  <rect width="155" height="210" fill="#2a0000" rx="8"/>
+                  <path d="M22 172 Q77 158 133 172 L140 210 H15 Z" fill="#FF6600" stroke="#1a0800" stroke-width="2"/><text x="77" y="198" text-anchor="middle" fill="#ffff00" font-size="7.5" font-family="Comic Sans MS,cursive" font-weight="bold">FLUB JUGGLERS</text><path d="M22 175 L15 200" stroke="#D4956A" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M133 175 L140 195" stroke="#D4956A" stroke-width="13" stroke-linecap="round" fill="none"/><ellipse cx="140" cy="198" rx="8" ry="6" fill="#D4956A" stroke="#1a0800" stroke-width="1"/><ellipse cx="133" cy="196" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-20 133 196)"/><ellipse cx="138" cy="194" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-10 138 194)"/><ellipse cx="143" cy="194" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(5 143 194)"/><ellipse cx="15" cy="202" rx="8" ry="6" fill="#D4956A" stroke="#1a0800" stroke-width="1"/><ellipse cx="8" cy="200" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-18 8 200)"/><ellipse cx="12" cy="198" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(-8 12 198)"/><ellipse cx="17" cy="198" rx="3" ry="7" fill="#ff66aa" stroke="#cc2288" stroke-width="1" transform="rotate(5 17 198)"/><rect x="63" y="150" width="29" height="22" fill="#D4956A" stroke="#1a0800" stroke-width="1.5"/><rect x="54" y="172" width="46" height="18" fill="white" stroke="#cc0000" stroke-width="1.5" rx="2"/><rect x="54" y="172" width="46" height="6" fill="#cc0000" rx="2"/><text x="77" y="177" text-anchor="middle" fill="white" font-size="5" font-family="Arial" font-weight="bold">FLUB JUGGLERS</text><text x="77" y="186" text-anchor="middle" fill="#000066" font-size="9" font-family="Comic Sans MS,cursive" font-weight="bold">CRYSTAL</text><ellipse cx="77" cy="112" rx="40" ry="42" fill="#D4956A" stroke="#1a0800" stroke-width="2"/><circle cx="77" cy="90" r="52" fill="#3a1a08" stroke="#1a0800" stroke-width="1.5"/><circle cx="35" cy="80" r="16" fill="#4a2008"/><circle cx="25" cy="98" r="14" fill="#3a1a08"/><circle cx="30" cy="115" r="12" fill="#4a2008"/><circle cx="119" cy="80" r="16" fill="#4a2008"/><circle cx="129" cy="98" r="14" fill="#3a1a08"/><circle cx="125" cy="115" r="12" fill="#4a2008"/><circle cx="50" cy="60" r="14" fill="#3a1a08"/><circle cx="77" cy="52" r="15" fill="#4a2008"/><circle cx="104" cy="60" r="14" fill="#3a1a08"/><path d="M38 105 Q36 82 48 68 Q60 55 77 53" fill="#4a2008" stroke="#1a0800" stroke-width="1.5"/><path d="M116 105 Q118 82 106 68 Q94 55 77 53" fill="#4a2008" stroke="#1a0800" stroke-width="1.5"/><path d="M46 95 Q40 100 44 108 Q48 116 42 120" stroke="#5a2a10" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M108 92 Q114 98 110 106 Q106 114 112 118" stroke="#5a2a10" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="62" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="62" cy="109" rx="7" ry="6" fill="#3a2a8a"/><ellipse cx="62" cy="109" rx="3.5" ry="3.5" fill="#0a0820"/><line x1="50" y1="104" x2="46" y2="96" stroke="#1a0800" stroke-width="2.5"/><line x1="55" y1="102" x2="52" y2="93" stroke="#1a0800" stroke-width="2.5"/><line x1="60" y1="101" x2="58" y2="92" stroke="#1a0800" stroke-width="2.5"/><line x1="65" y1="101" x2="64" y2="92" stroke="#1a0800" stroke-width="2.5"/><line x1="70" y1="102" x2="71" y2="93" stroke="#1a0800" stroke-width="2.5"/><line x1="74" y1="104" x2="77" y2="96" stroke="#1a0800" stroke-width="2.5"/><ellipse cx="93" cy="108" rx="13" ry="9" fill="white" stroke="#1a0800" stroke-width="1.5"/><ellipse cx="93" cy="109" rx="7" ry="6" fill="#3a2a8a"/><ellipse cx="93" cy="109" rx="3.5" ry="3.5" fill="#0a0820"/><line x1="81" y1="104" x2="77" y2="96" stroke="#1a0800" stroke-width="2.5"/><line x1="86" y1="102" x2="83" y2="93" stroke="#1a0800" stroke-width="2.5"/><line x1="91" y1="101" x2="89" y2="92" stroke="#1a0800" stroke-width="2.5"/><line x1="96" y1="101" x2="96" y2="92" stroke="#1a0800" stroke-width="2.5"/><line x1="101" y1="102" x2="103" y2="93" stroke="#1a0800" stroke-width="2.5"/><line x1="105" y1="104" x2="108" y2="96" stroke="#1a0800" stroke-width="2.5"/><path d="M52 97 Q62 92 73 95" stroke="#3a1a08" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M82 95 Q93 92 103 97" stroke="#3a1a08" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M59 140 Q77 134 95 140 Q92 150 77 153 Q62 150 59 140 Z" fill="#cc3322" stroke="#aa2211" stroke-width="2"/><path d="M63 141 Q77 138 91 141 L90 147 Q77 144 64 147 Z" fill="white"/><rect x="70" y="141" width="7" height="5" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5" rx="0.5"/><ellipse cx="47" cy="124" rx="13" ry="8" fill="#e08060" opacity="0.3"/><ellipse cx="107" cy="124" rx="13" ry="8" fill="#e08060" opacity="0.3"/>
+                </svg>
+                <div style="color:#ff9900; font-weight:bold; font-size:14px;">CRYSTAL</div>
+                <div style="color:#ffddcc; font-size:12px; font-style:italic; line-height:1.5; margin-top:3px;">Big curls, gold tooth, long pink nails. Genuinely the nicest person in Ankeny.</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <table width="100%" cellpadding="0" cellspacing="5">
+          <tr>
+            <td width="50%">
+              <div class="content-box">
+                <div style="text-align:center; font-size:36px; margin-bottom:5px;">👨‍🍳</div>
+                <div style="text-align:center; color:#ff9900; font-weight:bold; font-size:16px;">Randy "The Juggler" Flubmeyer</div>
+                <div style="text-align:center; color:#ffcc99; font-size:12px; margin-bottom:5px;">OWNER / FOUNDER / VISIONARY</div>
+                <div style="font-size:12px; color:#ffddcc; line-height:1.6;">Randy is the heart and soul of Flub Jugglers. Former quick-lube technician. Current restaurateur. Husband to Cheryl. He personally approves all new menu items, which means he eats at the restaurant basically every day. He says this is "quality control." Cheryl says it is "an excuse." Both are true. Randy has a philosophy about women, restaurants, and what Ankeny was missing. He will tell you about it if you ask. He will also tell you about it if you don't ask.</div>
+                <div style="margin-top:5px; font-size:11px; color:#ff6600; font-style:italic;">"My only regret is not putting 'salsa trio' on the menu sooner." — Randy</div>
+              </div>
+            </td>
+            <td width="50%">
+              <div class="content-box">
+                <div style="text-align:center; font-size:36px; margin-bottom:5px;">👩‍💼</div>
+                <div style="text-align:center; color:#ff9900; font-weight:bold; font-size:16px;">Cheryl Flubmeyer</div>
+                <div style="text-align:center; color:#ffcc99; font-size:12px; margin-bottom:5px;">CO-OWNER / ACTUAL PERSON IN CHARGE</div>
+                <div style="font-size:12px; color:#ffddcc; line-height:1.6;">Cheryl handles the books, the scheduling, the health inspections, and most of the things that keep Flub Jugglers legally operational. She did not expect to become a restaurant co-owner but here we are. Her spinach dip is the most popular item on the menu. She will not share the recipe.</div>
+                <div style="margin-top:5px; font-size:11px; color:#ff6600; font-style:italic;">"Randy, you forgot to order napkins again." — Cheryl (frequently)</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="content-box">
+                <div style="text-align:center; font-size:36px; margin-bottom:5px;">😐</div>
+                <div style="text-align:center; color:#ff9900; font-weight:bold; font-size:16px;">Kevin Flubmeyer</div>
+                <div style="text-align:center; color:#ffcc99; font-size:12px; margin-bottom:5px;">RANDY'S COUSIN / UNOFFICIAL PRESENCE</div>
+                <div style="font-size:12px; color:#ffddcc; line-height:1.6;">Kevin is Randy's cousin. He does not work here. He has never worked here. He does, however, show up most weekends, sit at the bar, and offer opinions on things. His opinions are not solicited. He tried to give Big Mike a note about the riblet sauce once. Big Mike did not read the note. Kevin is 38 years old and going through "a transitional period," according to Randy. Cheryl has a different term for it.</div>
+                <div style="margin-top:5px; font-size:11px; color:#ff6600; font-style:italic;">"I think this place could really use a juggling element." — Kevin, continuously</div>
+              </div>
+            </td>
+            <td>
+              <div class="content-box">
+                <div style="text-align:center; font-size:36px; margin-bottom:5px;">👩‍🍳</div>
+                <div style="text-align:center; color:#ff9900; font-weight:bold; font-size:16px;">Big Mike Castellano</div>
+                <div style="text-align:center; color:#ffcc99; font-size:12px; margin-bottom:5px;">HEAD CHEF</div>
+                <div style="font-size:12px; color:#ffddcc; line-height:1.6;">Mike is 6'4" and has been in the food service industry for 22 years. He went to culinary school. He works at Flub Jugglers because he says "the vibe is right." We don't ask follow-up questions. Mike invented the Atomic Flub Wings sauce and has referred to it as "my masterpiece." Three customers have cried. All three came back the next week to try it again.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="content-box">
+                <div style="text-align:center; font-size:36px; margin-bottom:5px;">👩‍💁</div>
+                <div style="text-align:center; color:#ff9900; font-weight:bold; font-size:16px;">Donna Przybylski</div>
+                <div style="text-align:center; color:#ffcc99; font-size:12px; margin-bottom:5px;">EVENTS COORDINATOR / SENIOR SERVER</div>
+                <div style="font-size:12px; color:#ffddcc; line-height:1.6;">Donna has been with Flub Jugglers since 2003 — opening week. She has seen everything. She has handled every type of customer. She once served a bachelorette party of 22 women entirely by herself because two servers called in sick and she considers it "a good night." If you want to book an event, Donna is your person. DO NOT call Kevin. Kevin does not work here. This cannot be stated enough.</div>
+              </div>
+            </td>
+            <td>
+              <div class="content-box">
+                <div style="text-align:center; font-size:36px; margin-bottom:5px;">🧑‍💻</div>
+                <div style="text-align:center; color:#ff9900; font-weight:bold; font-size:16px;">Tyler (Last Name Unknown)</div>
+                <div style="text-align:center; color:#ffcc99; font-size:12px; margin-bottom:5px;">WEBMASTER / BUSBOY</div>
+                <div style="font-size:12px; color:#ffddcc; line-height:1.6;">Tyler made this website. He is in 11th grade. Randy pays him in free meals. Tyler has described the website as "pretty much how I want it to look" and we trust him on this. He is also very good at clearing tables quickly. His mom says hi.</div>
+                <div style="margin-top:5px; font-size:11px; color:#ff6600; font-style:italic;">"I wanted to add a Flash animation but Mr. Flubmeyer said no. Whatever." — Tyler</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- ===== SPECIALS PAGE ===== -->
+      <div id="page-specials" class="page-section">
+        <div class="rainbow-text" style="font-size:28px; font-weight:bold; text-align:center;">💥 SPECIALS & EVENTS 💥</div>
+
+        <div class="content-box">
+          <div class="section-header">📅 WEEKLY EVENTS CALENDAR</div>
+          <table width="100%" cellpadding="6" cellspacing="0" style="border-collapse:collapse; margin-top:5px;">
+            <tr style="background:#330000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold; width:25%;">MONDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;">"Manic Monday Wings" — 25 cents off per wing when you order 20+. Yes we calculated the math. Yes it works out.</td>
+            </tr>
+            <tr style="background:#1a0000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold;">TUESDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;"><strong style="color:#ffff00;">⭐ TRIVIA NIGHT ⭐</strong> 7pm. 6 rounds. Top team wins a $25 Flub Jugglers gift certificate. Second place wins Randy's grudging respect. Questions written by Cheryl who is very good at this.</td>
+            </tr>
+            <tr style="background:#330000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold;">WEDNESDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;">"Hump Day Half-Price Apps" — All appetizers 50% off from 4-7pm. This is not a misprint. Randy did the math and says "we make it up in volume." Cheryl has not confirmed or denied this.</td>
+            </tr>
+            <tr style="background:#1a0000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold;">THURSDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;">"Thirsty Thursday" — $4 craft beers all night + DJ starting at 9pm. DJ is Donna's nephew. He is okay.</td>
+            </tr>
+            <tr style="background:#330000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold;">FRIDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;"><strong style="color:#ffff00;">🎵 DJ BRYCE — 9pm 🎵</strong> Donna's nephew. He plays Top 40 and some country. Randy asked him to play more classic rock. They are negotiating. Also happy hour all day because it's Friday and you deserve it.</td>
+            </tr>
+            <tr style="background:#1a0000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold;">SATURDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;"><strong style="color:#ffff00;">🎵 DJ BRYCE — 9pm 🎵</strong> Same as Friday. Randy is still negotiating the classic rock situation. Kitchen open until MIDNIGHT. Kevin will probably be in the parking lot. This is not an event.</td>
+            </tr>
+            <tr style="background:#330000;">
+              <td style="border:1px solid #ff6600; color:#ff9900; font-weight:bold;">SUNDAY</td>
+              <td style="border:1px solid #ff6600; color:#ffddcc; font-size:12px;">"Sunday Funday" — Kids eat free with any adult purchase. Bloody Mary bar 12-4pm. Big screen sports. Randy usually here working on paperwork but will come out and say hi if you want.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">🏈 SPORTS VIEWING SCHEDULE</div>
+          <div style="padding:5px; font-size:13px; color:#ffddcc; line-height:1.8;">
+            <p>We have <strong style="color:#ff9900;">4 big screen TVs</strong> and 7 regular screens. We show whatever sports are on. Big games = big crowds = call ahead for reservations because we will fill up and Donna will have no time for your problems.</p>
+            <p>We are an <strong style="color:#ff9900;">Iowa Hawkeyes establishment</strong>. During Hawkeyes games, domestic drafts are $1.99. Randy will be emotional. Please be supportive.</p>
+            <div class="under-construction" style="font-size:11px; margin-top:8px;">🚧 FULL SPORTS SCHEDULE COMING SOON — Tyler is working on it between classes 🚧</div>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">🎂 PRIVATE EVENTS & PARTIES</div>
+          <div style="padding:5px; font-size:13px; color:#ffddcc; line-height:1.8;">
+            <p>Got a birthday? Retirement party? Work thing? Team celebration? Baby shower? (We have done one baby shower. It went fine. The wings were a big hit.) <strong style="color:#ff9900;">Flub Jugglers can host your event!</strong></p>
+            <p>We can accommodate groups up to <strong style="color:#ff9900;">60 people</strong> with private section, custom menu options, and group pricing. DJ Bryce is available for private events for an additional fee (ask Donna, not Bryce). Kevin may also show up. We are working on this.</p>
+            <p>Call <strong style="color:#ff9900;">(515) 555-FLUB</strong> and ask for Donna. She handles events. Randy handles the food. Kevin handles nothing. This is the structure.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== LOCATION PAGE ===== -->
+      <div id="page-location" class="page-section">
+        <div class="fire-text" style="font-size:24px; font-weight:bold; text-align:center;">📍 FIND FLUB JUGGLERS! 📍</div>
+
+        <div class="content-box" style="margin-top:10px;">
+          <div class="section-header">🏠 OUR ADDRESS</div>
+          <div style="padding:10px; text-align:center;">
+            <div style="font-size:20px; color:#ff9900; font-weight:bold; margin:10px 0;">Flub Jugglers</div>
+            <div style="font-size:16px; color:#ffffff; line-height:2.0;">
+              1887 N Ankeny Blvd<br>
+              Ankeny, Iowa 50023<br>
+              <strong style="color:#ff9900;">☎️ (515) 555-FLUB</strong><br>
+              <strong style="color:#ff9900;">📠 Fax: (515) 555-3583</strong><br>
+              <a href="mailto:randy@flubjugglers.com" style="color:#ff6600;">📧 randy@flubjugglers.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">🗺️ HOW TO GET HERE</div>
+          <div style="padding:8px; font-size:13px; color:#ffddcc; line-height:1.8;">
+            <p><strong style="color:#ff9900;">FROM DES MOINES:</strong> Take I-35 North. Exit at Exit 92 (First Street/Oralabor Road). Head east on First Street, then north on N Ankeny Blvd. Look for the big orange sign. You will not miss it. Randy had it made extra large on purpose.</p>
+            <p><strong style="color:#ff9900;">FROM AMES:</strong> Head south on I-35, take Exit 92, same as above but in reverse.</p>
+            <p><strong style="color:#ff9900;">FROM ANYWHERE ELSE:</strong> Get to I-35, get to Ankeny, look for the sign. If you smell the wings before you see the sign, you're close.</p>
+            <p>We have a <strong style="color:#ff9900;">large parking lot</strong> out front and additional parking in the back. On Hawkeyes game nights you might have to park on the grass. Randy has said sorry about this and is "looking into it."</p>
+
+            <!-- ASCII MAP -->
+            <div style="font-family:'Courier New',monospace; font-size:11px; background:#000022; border:1px solid #0066ff; padding:8px; margin-top:8px; color:#88aaff; line-height:1.5; overflow-x:auto;">
+              <div style="color:#ffff00; margin-bottom:4px; font-family:'Comic Sans MS',cursive;">✦ SUPER ACCURATE MAP BY TYLER ✦</div>
+[I-35] ===== Exit 92 =====> [Oralabor Rd]
+                                      |
+                               [N Ankeny Blvd]
+                                      |
+                              ________|________
+                             |                 |
+                             |  🤹 FLUB 🤹    |
+                             |   JUGGLERS!!    |
+                             |   BIG SIGN      |
+                             |_________________|
+                                [PARKING LOT]
+            </div>
+            <div style="font-size:10px; color:#888; font-style:italic; margin-top:3px;">*Map not to scale. Map created by Tyler. Tyler is 16. Not a cartographer.</div>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">⏰ HOURS (AGAIN JUST IN CASE)</div>
+          <table width="100%" cellpadding="5" style="text-align:center; font-size:14px; color:#ffddcc;">
+            <tr><td style="color:#ff9900; font-weight:bold;">Monday - Thursday</td><td>11:00 AM — 10:00 PM</td></tr>
+            <tr style="background:#1a0000;"><td style="color:#ff9900; font-weight:bold;">Friday</td><td>11:00 AM — MIDNIGHT 🌙</td></tr>
+            <tr><td style="color:#ff9900; font-weight:bold;">Saturday</td><td>11:00 AM — MIDNIGHT 🌙</td></tr>
+            <tr style="background:#1a0000;"><td style="color:#ff9900; font-weight:bold;">Sunday</td><td>Noon — 9:00 PM</td></tr>
+          </table>
+          <div style="text-align:center; font-size:11px; color:#888; margin-top:6px; font-style:italic;">Kitchen closes 30 minutes before closing. Bar stays open until listed close time. On New Year's Eve we stay open until 2am and Randy cries a little at midnight, it's sweet.</div>
+        </div>
+      </div>
+
+      <!-- ===== GUESTBOOK PAGE ===== -->
+      <div id="page-guestbook" class="page-section">
+        <div class="fire-text" style="font-size:24px; font-weight:bold; text-align:center;">📖 THE FLUB JUGGLERS GUESTBOOK 📖</div>
+        <div style="text-align:center; font-size:12px; color:#aaaaaa; font-style:italic; margin-bottom:5px;">Sign our guestbook!! Be nice!! Randy reads these!!</div>
+
+        <!-- SIGN FORM -->
+        <div class="content-box">
+          <div class="section-header">✍️ SIGN THE GUESTBOOK</div>
+          <div style="padding:8px;">
+            <table width="100%" cellpadding="4" cellspacing="0">
+              <tr>
+                <td style="color:#ff9900; font-size:13px; width:100px;">Your Name:</td>
+                <td><input type="text" style="background:#000033; border:1px inset #0066ff; color:#ffffff; font-family:'Comic Sans MS',cursive; font-size:12px; padding:3px; width:200px;" placeholder="e.g. DaveFromAnkeny"></td>
+              </tr>
+              <tr>
+                <td style="color:#ff9900; font-size:13px;">Your City:</td>
+                <td><input type="text" style="background:#000033; border:1px inset #0066ff; color:#ffffff; font-family:'Comic Sans MS',cursive; font-size:12px; padding:3px; width:200px;" placeholder="e.g. Ankeny, IA"></td>
+              </tr>
+              <tr>
+                <td style="color:#ff9900; font-size:13px; vertical-align:top; padding-top:5px;">Message:</td>
+                <td><textarea rows="4" style="background:#000033; border:1px inset #0066ff; color:#ffffff; font-family:'Comic Sans MS',cursive; font-size:12px; padding:3px; width:90%;" placeholder="Tell us about your Flub Jugglers experience!!"></textarea></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" value="SIGN THE BOOK!! >>" onclick="addGuestEntry(); return false;" style="background:linear-gradient(180deg,#ff6600,#cc3300); color:#ffff00; font-family:'Comic Sans MS',cursive; font-weight:bold; font-size:14px; border:2px outset #ffaa00; padding:5px 15px; cursor:pointer;">
+                  <span style="font-size:10px; color:#888; margin-left:10px; font-style:italic;">Randy will probably respond personally</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- EXISTING ENTRIES -->
+        <div class="content-box">
+          <div class="section-header">📝 RECENT ENTRIES (page 4 of 23)</div>
+          <div id="guestbook-entries">
+
+            <div class="guestbook-entry">
+              <span style="color:#ff9900; font-weight:bold;">GeraldineWalcott</span> from <span style="color:#aaaaaa;">Altoona, IA</span>
+              <span style="color:#888; font-size:10px;"> — Thursday, November 4, 2004</span>
+              <br><span style="color:#ffddcc;">Came for my nephew's birthday and the whole table did the Atomic wings challenge. My nephew cried. My brother-in-law also cried. I did not cry but I did have to excuse myself. 5 stars would go again and maybe try the regular wings next time.</span>
+              <br><span style="color:#ff6600; font-size:11px; font-style:italic;">🍗 RANDY SAYS: Geraldine! Thank you!! Your nephew was a TROOPER. Free dessert next time for the whole table - just mention this entry. - Randy</span>
+            </div>
+
+            <div class="guestbook-entry">
+              <span style="color:#ff9900; font-weight:bold;">BobbyTractorSupply</span> from <span style="color:#aaaaaa;">Ankeny, IA</span>
+              <span style="color:#888; font-size:10px;"> — Monday, October 25, 2004</span>
+              <br><span style="color:#ffddcc;">Great place!! I saw Kevin in the parking lot attempting to juggle a set of car keys and two limes he got from somewhere. He wasn't asked to do this. Wings were perfect. I'll be back.</span>
+              <br><span style="color:#ff6600; font-size:11px; font-style:italic;">🍗 RANDY SAYS: Ha! Kevin is Kevin. Wings were on point though!! See you soon Bobby! - Randy</span>
+            </div>
+
+            <div class="guestbook-entry">
+              <span style="color:#ff9900; font-weight:bold;">MrsTeachFromAnkenyMiddle</span> from <span style="color:#aaaaaa;">Ankeny, IA</span>
+              <span style="color:#888; font-size:10px;"> — Friday, October 8, 2004</span>
+              <br><span style="color:#ffddcc;">I recognize Tyler from school and it's nice to see him working. He cleared our table very quickly. The spinach dip was excellent and I asked for the recipe and the woman I assume was Cheryl just said "no" and smiled. Excellent experience overall.</span>
+            </div>
+
+            <div class="guestbook-entry">
+              <span style="color:#ff9900; font-weight:bold;">IronJawJimmy</span> from <span style="color:#aaaaaa;">Des Moines, IA</span>
+              <span style="color:#888; font-size:10px;"> — Saturday, September 18, 2004</span>
+              <br><span style="color:#ffddcc;">DROVE ALL THE WAY FROM DES MOINES FOR THESE WINGS AND IT WAS WORTH IT. ALSO TINA GAVE ME THE MOST INTIMIDATING LOOK I HAVE EVER RECEIVED FROM A SERVER AND I TIPPED 40 PERCENT.</span>
+              <br><span style="color:#ff6600; font-size:11px; font-style:italic;">🍗 RANDY SAYS: JIMMY!!! We love the energy!!! Tina appreciates it even if she didn't show it!!! Come back!!! - Randy (also using caps)</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:5px;">
+          <a href="#" style="font-size:12px; color:#ff6600;">&lt;&lt; Page 3</a> &nbsp;|&nbsp;
+          <span style="color:#888; font-size:12px;">Page 4</span> &nbsp;|&nbsp;
+          <a href="#" style="font-size:12px; color:#ff6600;">Page 5 &gt;&gt;</a>
+        </div>
+      </div>
+
+      <!-- ===== GALLERY PAGE ===== -->
+      <div id="page-gallery" class="page-section">
+        <div class="fire-text" style="font-size:24px; font-weight:bold; text-align:center;">📷 PHOTO GALLERY 📷</div>
+        <div style="text-align:center; font-size:12px; color:#aaaaaa; font-style:italic; margin:5px 0 10px 0;">Real photos taken with Randy's digital camera (3.2 megapixels!!)</div>
+
+        <div class="under-construction">
+          🚧 TYLER IS UPLOADING PHOTOS - HE SAYS "THE FILE SIZES ARE TOO BIG AND I NEED TO RESIZE THEM FIRST" - CHECK BACK SOON 🚧
+        </div>
+
+        <div class="content-box" style="margin-top:10px;">
+          <div style="padding:8px; font-size:13px; color:#ffddcc; line-height:1.8; text-align:center;">
+            <p>In the meantime here is a description of what the photos will be when Tyler finishes:</p>
+            <table width="100%" cellpadding="8" style="text-align:center;">
+              <tr>
+                <td style="background:#220011; border:2px dashed #ff6600; width:33%;">
+                  <div style="font-size:40px;">🤹</div>
+                  <div style="font-size:11px; color:#ff9900;">Randy at Grand Opening<br>March 8, 2003 (crying)</div>
+                </td>
+                <td style="background:#220011; border:2px dashed #ff6600; width:33%;">
+                  <div style="font-size:40px;">🍗</div>
+                  <div style="font-size:11px; color:#ff9900;">The Wing Bucket<br>(50 pc - actual size)</div>
+                </td>
+                <td style="background:#220011; border:2px dashed #ff6600; width:33%;">
+                  <div style="font-size:40px;">👨‍🍳</div>
+                  <div style="font-size:11px; color:#ff9900;">Randy at the<br>grill (blurry)</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="background:#220011; border:2px dashed #ff6600;">
+                  <div style="font-size:40px;">🏆</div>
+                  <div style="font-size:11px; color:#ff9900;">Pennysaver Award<br>Ceremony 2004</div>
+                </td>
+                <td style="background:#220011; border:2px dashed #ff6600;">
+                  <div style="font-size:40px;">🔥</div>
+                  <div style="font-size:11px; color:#ff9900;">Customer after<br>Atomic Wings<br>(with permission)</div>
+                </td>
+                <td style="background:#220011; border:2px dashed #ff6600;">
+                  <div style="font-size:40px;">🎂</div>
+                  <div style="font-size:11px; color:#ff9900;">Cheryl's 40th birthday<br>party here (2004)</div>
+                </td>
+              </tr>
+            </table>
+            <div style="margin-top:10px; font-size:11px; color:#888; font-style:italic;">Tyler estimates photos will be uploaded "by the end of the week." Tyler has said this for 3 weeks.</div>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="section-header">📧 SEND US YOUR PHOTOS!!</div>
+          <div style="padding:8px; font-size:13px; color:#ffddcc;">
+            <p>Have photos from your visit to Flub Jugglers?? Email them to <a href="mailto:randy@flubjugglers.com">randy@flubjugglers.com</a> and we will put them on here when Tyler gets around to it!! Best photo each month wins a FREE APPETIZER.</p>
+          </div>
+        </div>
+      </div>
+
+    </td>
+  </tr>
+
+  <!-- FOOTER -->
+  <tr>
+    <td colspan="2" class="footer-cell">
+      <div class="flame-divider" style="font-size:18px;">🔥🤹🔥🤹🔥🤹🔥🤹🔥🤹🔥🤹🔥🤹🔥</div>
+      <div style="font-size:13px; color:#ffcc99; margin:6px 0;">
+        <strong>© 2003-2005 Flub Jugglers Inc., Ankeny Iowa — All Rights Reserved</strong><br>
+        Website Design by Tyler [webmaster] • Hosted on <a href="#" style="color:#ff9900;">GoDaddy</a> • Best viewed in <a href="#" style="color:#ff9900;">Internet Explorer 6.0</a>
+      </div>
+      <div style="font-size:11px; color:#888888; margin-top:4px; font-style:italic;">
+        Flub Jugglers is not affiliated with any other wing-focused or "breastaurant" establishment. Kevin Flubmeyer is not an employee. Flub Sauce™ is a registered trademark pending. The Bloomin' Flub Onion is entirely original.
+      </div>
+      <div style="margin-top:8px;">
+        <marquee behavior="scroll" direction="right" scrollamount="2" style="font-size:11px; color:#666666;">
+          ★ Thank you for visiting flubjugglers.com ★ Tell a friend!! ★ Or don't!! But it would be great if you did!! ★ See you in Ankeny!! ★ Go Hawks!! ★
+        </marquee>
+      </div>
+    </td>
+  </tr>
+
+</table>
+
+<script>
+  // Page navigation
+  function showPage(name) {
+    document.querySelectorAll('.page-section').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    var target = document.getElementById('page-' + name);
+    if (target) target.classList.add('active');
+    window.scrollTo(0,0);
+  }
+
+  // Popup
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('popup-overlay').style.display = 'none';
+  }
+  function showPopup() {
+    // Show popup on load (already visible by default)
+  }
+
+  // Counter animation - count up slightly
+  var count = 51337;
+  setInterval(function() {
+    count++;
+    var s = String(count).padStart(6, '0');
+    s = s.slice(0,3) + ',' + s.slice(3);
+    document.getElementById('counter').textContent = s;
+  }, 4700);
+
+  // Guestbook add entry
+  function addGuestEntry() {
+    alert("Thanks for signing the Flub Jugglers Guestbook!!\n\nRandy has been notified. He will probably respond. He usually does. - Cheryl");
+  }
+</script>
+
+</body>
+</html>
